@@ -77,7 +77,7 @@ handleFormatChange=event=>{
         Format:this.state.Format
     };
 
-axios.post('http://localhost:3001/Store234',this.state.Store234)
+axios.post('http://172.105.60.143:3001/Store234',this.state.Store234)
       .then(res=>{
           console.log(res);
           console.log(res.data);
