@@ -14,11 +14,5 @@ pipeline{
       }
     }
     
-    stage('Serve'){
-      steps{
-        sh 'npm run serve'
-      }
-    }
-    
   }
 }
