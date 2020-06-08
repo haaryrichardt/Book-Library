@@ -13,9 +13,9 @@ pipeline{
         sh 'npm run build'
       }
     }
-    stage('Upload'){
+  stage('Build'){
       steps{
-        nexusArtifactUploader credentialsId: 'nexus', groupId: '1', nexusUrl: '45.79.121.91:8081/repository/devops', nexusVersion: 'nexus2', protocol: 'http', repository: 'devops', version: '1.1'
+        nexusArtifactUploader artifacts: [[artifactId: 'static', classifier: '', file: 'static.zip', type: 'zip']], credentialsId: 'nexus', groupId: '1', nexusUrl: '45.79.121.91:8081/repository/devops', nexusVersion: 'nexus2', protocol: 'http', repository: 'devops', version: '1.1'
       }
     }
     
