@@ -17,7 +17,7 @@
     "redux": "^4.0.4"
   },
   "scripts": {
-    "start": "HOST=172.105.60.143 react-scripts start",
+    "start": "react-scripts start",
     "json-server": "json-server --watch Serbook.json --port 3001",
     "serve": "concurrently \"npm run json-server\" \"npm start\"",
     "build": "react-scripts build",
