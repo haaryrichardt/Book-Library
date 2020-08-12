@@ -20,7 +20,7 @@ class Navbar extends React.Component{
 
   componentDidMount(){
     console.log(this.state.Value);
-    axios.get('http://172.105.60.143:3000/Store234'+'/'+this.state.Value)
+    axios.get('http://146.148.89.61:80/Store234'+'/'+this.state.Value)
     .then(res=>{
       const books=res.data;
      
