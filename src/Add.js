@@ -12,7 +12,7 @@ class App extends React.Component {
     }
   }
   componentDidMount(){
-    axios.get('http://72.105.60.143:3000/books')
+    axios.get('http://146.148.89.61:80/books')
       .then(res=>{
         const books=res.data;
        
