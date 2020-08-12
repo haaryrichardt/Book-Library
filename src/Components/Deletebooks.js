@@ -16,7 +16,7 @@ class Delbooks extends React.Component{
     render(){
         return{
           delbooks(){
-            axios.delete('http://172.105.60.143:3000/Store234/' +this.state.id).then((response)=>{
+            axios.delete('http://146.148.89.61:80/Store234/' +this.state.id).then((response)=>{
                 console.log("This id has been deleted"+this.state.id);
               })
           }
