@@ -14,7 +14,7 @@ class Update extends React.Component{
       }
 
    componentDidMount(){
-        axios.get('http://172.105.60.143:3000/Store234'+'/'+this.props.id)
+        axios.get('http://146.148.89.61:80/Store234'+'/'+this.props.id)
           .then(res=>{
             
            this.books={
